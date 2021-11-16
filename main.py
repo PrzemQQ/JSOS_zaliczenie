@@ -7,7 +7,8 @@ class Student:
     oceny_p1 = []
     oceny_p2 = []
     oceny_p3 = []
-    
+    lista_studentow = []
+    pomocznicza_lista_studentow = []
     def __init__(self,imie,nazwisko,indeks) -> None:
         self.imie = imie
         self.nazwisko =nazwisko
@@ -15,6 +16,8 @@ class Student:
         self.oceny_p1 = []
         self.oceny_p2 = []
         self.oceny_p3 = []
+        self.lista_studentow.append(f"{imie}, {nazwisko}, {indeks}")
+        self.pomocznicza_lista_studentow.append(f"{imie.lower()}_{nazwisko.lower()}")
         
     def dodaj_ocene(self,przedmiot,ocena):
         """[Dodaje oceny do indeksu]
