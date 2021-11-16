@@ -93,7 +93,7 @@ jan_kowalski = Student("Jan","Kowalski",266838)
 anna_nowak = Student("Anna","Nowak",288564)
 joanna_mucha = Student("Joanna","Mucha",234086)
 
-
+#zaprezentowanie funckjonalnosci
 if __name__ == '__main__':
     #test metod dla JK
     print(jan_kowalski.dodaj_ocene("analiza",5))
@@ -120,3 +120,27 @@ if __name__ == '__main__':
     #test edycji 
     print(jan_kowalski.edytuj_ocene("analiza",0,2))
     print(jan_kowalski)
+    
+#dla 5-3gui.py  
+else:
+    jan_kowalski.dodaj_ocene("analiza",5)
+    jan_kowalski.dodaj_ocene("analiza",5.5)
+    jan_kowalski.dodaj_ocene("analiza",3)
+    jan_kowalski.dodaj_ocene("fizyka",4)
+    jan_kowalski.dodaj_ocene("fizyka",5)
+    jan_kowalski.dodaj_ocene("fizyka",2)
+    
+    #test metody wystwielenia dla poszczegolnego przedmiotu
+    jan_kowalski.wyswietl_oceny("analiza")
+    
+    #test metod dla AN
+    anna_nowak.dodaj_ocene("algebra",1)
+    anna_nowak.dodaj_ocene("algebra",2)
+    anna_nowak.dodaj_ocene("algebra",3)
+    anna_nowak.dodaj_ocene("analiza",5)
+    anna_nowak.dodaj_ocene("analiza",6)
+    anna_nowak.dodaj_ocene("analiza",7)
+    
+    #test edycji 
+    jan_kowalski.edytuj_ocene("analiza",0,2)
+    
