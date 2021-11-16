@@ -142,8 +142,11 @@ else:
     anna_nowak.dodaj_ocene("algebra",3)
     anna_nowak.dodaj_ocene("analiza",5)
     anna_nowak.dodaj_ocene("analiza",6)
-    anna_nowak.dodaj_ocene("analiza",7)
+    anna_nowak.dodaj_ocene("analiza",2)
     
     #test edycji 
     jan_kowalski.edytuj_ocene("analiza",0,2)
     
+    joanna_mucha.dodaj_ocene("analiza",5)
+    joanna_mucha.dodaj_ocene("analiza",3)
+    joanna_mucha.dodaj_ocene("analiza",2)
