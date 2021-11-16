@@ -32,11 +32,11 @@ class Student:
         self.ocena = ocena
         self.przedmiot = przedmiot
         match przedmiot.lower():
-            case "analiza":
+            case self.przedmiot1:
                 self.oceny_p1.append(ocena)
-            case "algebra":
+            case self.przedmiot2:
                 self.oceny_p2.append(ocena)
-            case "fizyka":
+            case self.przedmiot3:
                 self.oceny_p3.append(ocena)
             case default:
                 pass
@@ -52,11 +52,11 @@ class Student:
             [list]: [wyswietla ocene z danego przedmiotu dla danego studenta]
         """
         match przedmiot.lower():
-            case "analiza":
+            case self.przedmiot1:
                 return f"Oceny z {przedmiot.lower()}  dla ucznia {self.imie, self.nazwisko} =  {self.oceny_p1} "
-            case "algebra":
+            case self.przedmiot2:
                 return f"Oceny z {przedmiot.lower()}  dla ucznia {self.imie, self.nazwisko} =  {self.oceny_p2} "
-            case "fizyka":
+            case self.przedmiot3:
                 return f"Oceny z {przedmiot.lower()}  dla ucznia {self.imie, self.nazwisko} =  {self.oceny_p3} "
             case default:
                 pass
@@ -77,15 +77,15 @@ class Student:
         self.pozycja_oceny = pozycja_oceny
         self.nowa_ocena = nowa_ocena
         match przedmiot:
-            case "analiza":
+            case self.przedmiot1:
                 stara_ocena = self.oceny_p1[pozycja_oceny]
                 self.oceny_p1[pozycja_oceny] = nowa_ocena
                 print(f"zmieniono {stara_ocena} na {nowa_ocena} dla przedmiotu {przedmiot} ")
-            case "algebra":
+            case self.przedmiot2:
                 stara_ocena = self.oceny_p2[pozycja_oceny]
                 self.oceny_p2[pozycja_oceny] = nowa_ocena
                 print(f"zmieniono {stara_ocena} na {nowa_ocena} dla przedmiotu {przedmiot} ")
-            case "fizyka":
+            case self.przedmiot3:
                 stara_ocena = self.oceny_p3[pozycja_oceny]
                 self.oceny_p3[pozycja_oceny] = nowa_ocena
                 print(f"zmieniono {stara_ocena} na {nowa_ocena} dla przedmiotu {przedmiot} ")
