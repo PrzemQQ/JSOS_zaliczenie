@@ -1,2 +1,3 @@
-# Zaliczenie-oceny-studentow
-zaliczenie wstęp do programowania
+# Zaliczenie SQL na Wstęp do Programowania
+Mini JSOS
+![Screenshot](ss.png)
